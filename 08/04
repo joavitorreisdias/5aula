@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#include <math.h>
+void main()
+{   float Km;
+    float L;
+    float  KmL;
+    printf("qual a distancia percorrida? "); scanf("%f",&Km);
+    printf("quanto de combustível foi gasto? "); scanf("%f",&L);
+    KmL = Km/L;
+    if(KmL < 8.0)
+        printf("venda o carro");
+    else if(KmL >= 8.0 && KmL <= 14.0)
+        printf("economico\n");
+    else if( KmL >= 12.0)
+        printf("super economico");
+    return 0;
+}
